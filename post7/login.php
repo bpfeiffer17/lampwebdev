@@ -1,6 +1,6 @@
 <?php
 $hn = 'localhost';
 $un = 'root';
-$pw = 'saltshaker3!';
+$pw = 'youPassword';
 $db = 'FirstPage'
 ?>
