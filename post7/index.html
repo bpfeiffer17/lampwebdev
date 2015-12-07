@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>First Page</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="index.js"></script> 
+	</head>
+	<body>
+		<div class = "main">
+			<table class = "userInfo">
+				<tr>
+					<td>
+						<label>First Name:</label><br>
+						<input id="firstName" type="text">
+					</td>
+					<td colspan="2">
+						<label>Last Name:</label><br>
+                                                <input id="lastName" type="text">
+                                        </td>
+
+				</tr>
+				<tr>
+					<td colspan="3">
+						<label>Street:</label><br>
+						<input id="street" class="streetLabel" type="text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>City:</label><br>
+                                                <input onchange="fillState(this.value)" id="city" type="text">
+                                        </td>
+					<td>
+						<label>State:</label><br>
+                                                <input id="state" type="text">
+					</td>
+					<td>
+						<label>Zip:</label><br>
+                                                <input id="zip" type="text">
+                                        </td>
+				</tr>
+				<tr>					
+					<td>	
+						<button onclick="clearAllInputBoxes()">Clear</button>
+					</td>
+					<td>
+						<button onclick="insertRecord()">Insert</button>
+					</td>
+					<td>
+                                                <button onclick="getUsers()">Get Users</button>
+                                        </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "main" id="ajaxResponse"></div>
+	<body>
+
+</html>
